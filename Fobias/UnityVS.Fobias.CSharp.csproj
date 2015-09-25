@@ -59,8 +59,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRCommon.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRDisplay.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRManager.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRPluginEvent.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRTracker.cs" />
+    <Compile Include="Assets\OVR\Scripts\OvrCapi.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRCrosshair.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRGUI.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRGamepadController.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRGridCube.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRMainMenu.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRPlayerController.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRUGUI.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRVisionGuide.cs" />
     <Compile Include="Assets\Scripts\HelloWorld.cs" />
+    <Compile Include="Assets\Scripts\LookInputModule.cs" />
+    <Compile Include="Assets\Scripts\SetTextFromFloat.cs" />
+    <Compile Include="Assets\Scripts\TestEvents.cs" />
     <Compile Include="Assets\Scripts\Utilities\Util.cs" />
+    <Compile Include="Assets\UnitySuppliedScripts\DragMe.cs" />
+    <Compile Include="Assets\UnitySuppliedScripts\DropMe.cs" />
+    <Compile Include="Assets\UnitySuppliedScripts\IgnoreRaycast.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
+    <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
+    <None Include="Assets\Plugins\donotdelete.txt" />
+    <None Include="Assets\Plugins\x86\donotdelete.txt" />
+    <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>
