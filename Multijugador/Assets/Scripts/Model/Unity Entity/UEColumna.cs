@@ -8,14 +8,10 @@ public class UEColumna : MonoBehaviour , IColumna {
     public string id { get; set; }
     public string nombre { get; set; }
     public string jugadores { get; set; }
-
-	// Use this for initialization
+    public bool clicked { get; set; }
+    
 	void Start () {
 	
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }

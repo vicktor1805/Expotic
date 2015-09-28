@@ -14,6 +14,7 @@ public class Util : MonoBehaviour {
     public readonly string IMAGES_PARENT = "Image";
     public readonly string SCENE_0 = "Scene0";
     public readonly string SCENE_1 = "Scene1";
+    public readonly string SCENE_2 = "Scene2";
     private readonly string METHOD_GET = "GET";
     public readonly string CONTAINER = "Container";
     public readonly string CONTAINER_GRID_ROMMS = "grvRooms";
@@ -23,6 +24,9 @@ public class Util : MonoBehaviour {
     public readonly string ERROR_UI = "ErrorBackground";
     public readonly string BUTTON_CREAR = "btnCrear";
     public readonly string BUTTON_UNIRSE = "btnUnirse";
+    public readonly string MESSAGE_NO_NAME_ROOM = "Ingrese un nombre para el Room";
+    public int OPERATION;
+    public int currentID = -1;
 
     public static Util instance
     {
@@ -59,6 +63,7 @@ public class Util : MonoBehaviour {
         }
         catch (HttpListenerException ex)
         {
+            OPERATION = 0;
             print("[ERROR]: Hubo un error recolectando la data: " + ex.Message);
             return default(T);
         }
@@ -82,15 +87,23 @@ public class Util : MonoBehaviour {
         return true;
     }
 
-    private void ShowPanelHandleUIExeption(string message,GameObject go)
+    public void ShowPanelHandleUIExeption(string message,GameObject go)
     {
         go.SetActive(true);
         go.transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text = message;
     }
 
-    public void HidePanelHandleUIExeption()
+    public void HidePanelHandleUIExeption(GameObject go)
     {
-        Application.Quit();
+        if (OPERATION == 0)
+        {
+            Application.Quit();
+        }
+        if (OPERATION == 1)
+        {
+            go.SetActive(false);
+            OPERATION = 0;
+        }
     }
 
     public Grid ParseRoomArrayToList(RoomInfo[] rooms)

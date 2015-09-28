@@ -11,11 +11,12 @@ public class MenuController : Photon.MonoBehaviour {
     private RoomInfo[] rooms;
     private Text text;
     public GameObject errorPanel;
+    public Text roomName;
 
 	void Start () {
 
+        roomName = GameObject.Find(Util.instance.ROOM_NAME).GetComponent<Text>();
         rooms = new RoomInfo[0];
-        text = GameObject.Find("Message").GetComponent<Text>();
         version = "1.0";
 
         if (Util.instance.TestInternetConnection(errorPanel))
@@ -53,17 +54,39 @@ public class MenuController : Photon.MonoBehaviour {
 
     public void Quit()
     {
-        Application.Quit();
+        Util.instance.HidePanelHandleUIExeption(errorPanel);
     }
 
     public void CreateRoom()
     {
-        PhotonNetwork.CreateRoom("Room " + Random.Range(1, 11));
+        string temp = roomName.text.Trim();
+        if(temp.Equals(""))
+        {
+            Util.instance.OPERATION = 1;
+            Util.instance.ShowPanelHandleUIExeption(Util.instance.MESSAGE_NO_NAME_ROOM, errorPanel);
+        }
+        else
+        {
+            PhotonNetwork.CreateRoom(temp);
+            Util.instance.LoadScene(Util.instance.SCENE_2);
+        }
+        
     }
 
     public void JoinRoom()
     {
+        if (Util.instance.currentID != -1)
+        {
+            print(Util.instance.currentID);
+            string nameRoom = getRoom(Util.instance.currentID);
+            print(nameRoom);
+            PhotonNetwork.JoinRoom(nameRoom);
+            PhotonNetwork.LoadLevel(Util.instance.SCENE_2);
+        }
+        else
+        {
 
+        }
     }
 
     void DeleteCurrentList()
@@ -74,5 +97,15 @@ public class MenuController : Photon.MonoBehaviour {
         {
             Destroy(GameObject.Find(Util.instance.CONTAINER_GRID_ROMMS).transform.GetChild(i).gameObject);
         }
+    }
+
+    string getRoom(int id)
+    {
+        for (int i = 0; i < rooms.Length; ++i)
+        {
+            if (i + 1 == id)
+                return rooms[i].name;
+        }
+        return "";
     }
 }
