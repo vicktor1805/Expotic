@@ -15,18 +15,26 @@ public class Util : MonoBehaviour {
     public readonly string SCENE_0 = "Scene0";
     public readonly string SCENE_1 = "Scene1";
     public readonly string SCENE_2 = "Scene2";
+    public readonly string SCENE_3 = "Scene3";
     private readonly string METHOD_GET = "GET";
     public readonly string CONTAINER = "Container";
     public readonly string CONTAINER_GRID_ROMMS = "grvRooms";
     public readonly string CONTAINER_HEADER = "Header";
     public readonly string FONT_SOLANOGOTHIC_MVB_MDCAP = "Fonts/SolanoGothicMVB-MdCap";
     public readonly string ROOM_NAME = "RoomName";
+    public readonly string ROOM_NAME_CONTAINER = "RoomNameContainer";
     public readonly string ERROR_UI = "ErrorBackground";
     public readonly string BUTTON_CREAR = "btnCrear";
     public readonly string BUTTON_UNIRSE = "btnUnirse";
     public readonly string MESSAGE_NO_NAME_ROOM = "Ingrese un nombre para el Room";
+    public readonly string PLAYER_LIST_PANEL = "PanelList";
+    public readonly string PLAYER_NAME = "txtNombreJugador";
+    public readonly string PLAYER_NAME_ERROR = "ErrorName";
     public int OPERATION;
     public int currentID = -1;
+    public bool isLoggedIn = false;
+    public bool isConnected = false;
+
 
     public static Util instance
     {

@@ -11,7 +11,6 @@ public class UEColumna : MonoBehaviour , IColumna {
     public bool clicked { get; set; }
     
 	void Start () {
-	
 	}
 
 }
