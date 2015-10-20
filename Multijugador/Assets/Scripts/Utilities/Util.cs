@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using System.Net;
 using System.IO;
+using Assets.Scripts.Model.Entity;
 
 public class Util : MonoBehaviour {
 
@@ -34,7 +35,7 @@ public class Util : MonoBehaviour {
     public int currentID = -1;
     public bool isLoggedIn = false;
     public bool isConnected = false;
-
+    public List<Player> listPlayers;
 
     public static Util instance
     {

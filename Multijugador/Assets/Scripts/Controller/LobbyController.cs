@@ -122,6 +122,7 @@ public class LobbyController : Photon.MonoBehaviour {
 
     public void StartGame()
     {
+        Util.instance.listPlayers = Players;
         PhotonNetwork.LoadLevel(Util.instance.SCENE_3);
     }
 
