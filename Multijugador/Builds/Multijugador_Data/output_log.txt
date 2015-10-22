@@ -1,0 +1,89 @@
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     128 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Victor\Documents\Expotic\Multijugador\Builds\Multijugador_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Victor\Documents\Expotic\Multijugador\Builds\Multijugador_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Victor\Documents\Expotic\Multijugador\Builds\Multijugador_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Victor\Documents\Expotic\Multijugador\Builds\Multijugador_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Victor\Documents\Expotic\Multijugador\Builds\Multijugador_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Victor\Documents\Expotic\Multijugador\Builds\Multijugador_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Victor\Documents\Expotic\Multijugador\Builds\Multijugador_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Victor\Documents\Expotic\Multijugador\Builds\Multijugador_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Victor\Documents\Expotic\Multijugador\Builds\Multijugador_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Victor\Documents\Expotic\Multijugador\Builds\Multijugador_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Victor\Documents\Expotic\Multijugador\Builds\Multijugador_Data\Managed\Newtonsoft.Json.dll (this message is harmless)
+Loading C:\Users\Victor\Documents\Expotic\Multijugador\Builds\Multijugador_Data\Managed\Newtonsoft.Json.dll into Unity Child Domain
+Platform assembly: C:\Users\Victor\Documents\Expotic\Multijugador\Builds\Multijugador_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Victor\Documents\Expotic\Multijugador\Builds\Multijugador_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+Platform assembly: C:\Users\Victor\Documents\Expotic\Multijugador\Builds\Multijugador_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.285 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Victor\Documents\Expotic\Multijugador\Builds\Multijugador_Data\Managed\System.dll (this message is harmless)
+Logo_Expotic
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Logo_BIT
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1d50 -> priority: 1 
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.443004 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 396.
+Total: 0.321333 ms (FindLiveObjects: 0.028027 ms CreateObjectMapping: 0.011447 ms MarkObjects: 0.265672 ms  DeleteObjects: 0.011053 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.638324 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 387.
+Total: 0.459893 ms (FindLiveObjects: 0.038291 ms CreateObjectMapping: 0.021316 ms MarkObjects: 0.390415 ms  DeleteObjects: 0.009079 ms)
+
+Connecting to nameserver ns.exitgames.com:5058
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Establishing Encryption
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+OperationResponse 230: ReturnCode: 0 (). Parameters: {(Byte)230=(String)chat-eu.exitgames.com:5057, (Byte)221=(String)M2CbMWi40dSxghaLr+bnXkVh3wNKtWkaHcv8cQt023hqyWfT5IuJRnazQ4IQT0Ja+Epzlgo/zzc6Ba/piTishev2GXwVbBW7HxHl0nUhVWVjCJe/VZ74f10btFAFXbb1, (Byte)225=(String)Victor} on: ns.exitgames.com:5058
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Connecting to frontend chat-eu.exitgames.com:5057
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Establishing Encryption
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+OperationResponse 230: ReturnCode: 0 (). Parameters: {} on: ns.exitgames.com:5058
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Subscribed to a new channel!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.300178 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 684.
+Total: 0.391205 ms (FindLiveObjects: 0.053292 ms CreateObjectMapping: 0.013421 ms MarkObjects: 0.314227 ms  DeleteObjects: 0.009079 ms)
+
+Victor
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
